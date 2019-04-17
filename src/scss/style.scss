@@ -1,0 +1,28 @@
+$bg-color: pink;
+
+body {
+ background: $bg-color;
+ transition: translateX(10%);
+}
+
+img {
+  height: 100px;
+  width: auto;
+  animation: 1s ease-in-out infinite rotation;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotateZ(10deg);
+  }
+  50% {
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateZ(10deg);
+  }
+}
+
+::placeholder {
+  color: gray;
+}
